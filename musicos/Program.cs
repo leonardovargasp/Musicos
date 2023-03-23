@@ -1,4 +1,6 @@
-﻿abstract class musico
+﻿internal class Program
+{
+    abstract class musico
 {
     public string Nombre{ get;set;}
     public musico(string n){Nombre = n;}
@@ -34,10 +36,6 @@ public override /*new*/ void Tocar()
   }
 
  }
-
-
-internal class Program
-{
     private static void Main(string[] args)
     {
         List<musico> Galgos = new List<musico>();
@@ -46,12 +44,5 @@ internal class Program
 
         foreach(var m in Galgos)m.saluda();
         foreach(var m in Galgos)m.Tocar();
-
-       
-        
-        
-        
-
-
     }
 }
